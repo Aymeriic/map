@@ -1,0 +1,12 @@
+.toolbox {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.credit {
+  align-self: center;
+}

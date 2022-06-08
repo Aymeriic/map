@@ -1,0 +1,9 @@
+.tooltip {
+  width: 500px;
+  margin: auto;
+}
+
+.squareContainer {
+  display: flex;
+  text-align: center;
+}

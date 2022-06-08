@@ -1,0 +1,20 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rock {
+    background-color: grey;
+}
+
+.water {
+    background-color: blue;
+}
+
+.house {
+    background-color: black;
+}
+
+.grass {
+    background-color: green;
+}
