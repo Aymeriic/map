@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { tradeActions } from "../../constants/config";
 import { remove, selectedSquare } from "../map/mapSlice";

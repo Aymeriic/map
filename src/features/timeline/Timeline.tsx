@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { selectHistory, selectHistoryId, selectHistoryItem } from '../map/mapSlice';
 import TimelineItem from './TimelineItem';

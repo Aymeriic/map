@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { useAppDispatch } from '../../app/hooks';
 import { selectSquareType } from "../map/mapSlice";
 

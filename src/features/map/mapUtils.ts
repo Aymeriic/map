@@ -5,7 +5,7 @@ import board, {
 } from "../../constants/config";
 import { Square } from "../../constants/map";
 
-export function getSquareIndex(squareList: any, square: Square): number {
+export function getSquareIndex(squareList: Square[], square: Square): number {
   return squareList.findIndex((sq: Square) => sq.x === square.x && sq.y === square.y)
 }
 
@@ -33,4 +33,4 @@ export function getSquareSize(squareSize: number, pourcentage: number): number {
   }
 
   return squareSize * componentSize / (board.col * SquareConfig.Width);
-};
+}

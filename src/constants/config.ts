@@ -1,7 +1,7 @@
 import BoardConfig, { TradeActions } from "./map";
 
-export const STONES_PERCENTAGE: number = 5;
-export const CREDIT: number = 100;
+export const STONES_PERCENTAGE = 5;
+export const CREDIT = 100;
 
 export const enum Elements {
   Grass = 'grass',

@@ -3,7 +3,7 @@ export interface BoardConfig {
   row: number;
   pourcentageSize: number;
   maxSize: number;
-};
+}
 
 export interface MapState {
   value: Array<Square>;

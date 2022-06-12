@@ -1,9 +1,11 @@
-import ToolItem from "./ToolItem";
+import React from 'react';
 
-import styles from './Toolbox.module.css';
-import { Elements } from "../../constants/config";
+import ToolItem from "./ToolItem";
 import { selectCredit } from "../map/mapSlice";
 import { useAppSelector } from "../../app/hooks";
+import { Elements } from "../../constants/config";
+
+import styles from './Toolbox.module.css';
 
 export const Toolbox = (): JSX.Element => {
   const credit = useAppSelector(selectCredit);

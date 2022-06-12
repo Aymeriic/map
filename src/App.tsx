@@ -1,3 +1,4 @@
+import React from 'react';
 import Map from './features/map/Map';
 import Timeline from './features/timeline/Timeline';
 import Toolbox from './features/toolbox/Toolbox';
