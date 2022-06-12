@@ -2,9 +2,10 @@ import { useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { selectHistory, selectHistoryId, selectHistoryItem } from '../map/mapSlice';
 import TimelineItem from './TimelineItem';
-import board, { Square } from '../../constants/config';
+import board from '../../constants/config';
 
 import styles from './Timeline.module.css';
+import { getSquareHeight } from '../map/mapUtils';
 
 export const Timeline = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -16,7 +17,7 @@ export const Timeline = (): JSX.Element => {
   }, [dispatch, historyId])
 
   return (
-    <div className={styles.timeline} style={{ height: board.row * Square.Height }}>
+    <div className={styles.timeline} style={{ height: board.row * getSquareHeight(board.pourcentageSize) }}>
       <div className={styles.buttons}>
         <button
           disabled={historyId < 0}

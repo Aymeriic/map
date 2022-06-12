@@ -14,8 +14,8 @@ export const TimelineItem = ({ actionName, id }: TimelineItemProps): JSX.Element
   const dispatch = useAppDispatch();
 
   const handleChangeHistory = useCallback(() => {
-    dispatch(selectHistoryItem(historyId));
-  }, [dispatch, historyId])
+    dispatch(selectHistoryItem(id));
+  }, [dispatch, id])
 
   return (
     <p onClick={handleChangeHistory} className={`timeline-item ${Number(historyId) === Number(id) ? styles.selected : ''}`}>

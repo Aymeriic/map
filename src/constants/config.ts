@@ -42,6 +42,8 @@ export const tradeActions: TradeActions = {
 export const board: BoardConfig = {
   row: 10,
   col: 10,
+  pourcentageSize: 0.6,
+  maxSize: 800,
 };
 
 export default board;

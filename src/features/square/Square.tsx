@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { Square as SquareConfig } from '../../constants/config';
 import { selectIsEditable, selectSquare } from '../map/mapSlice';
-
 import {
   changeSquareType,
 } from '../map/mapSlice';
+import { getSquareHeight, getSquareWidth } from '../map/mapUtils';
+import board from '../../constants/config';
 
 import squareStyles from './Square.module.css';
 import mapStyles from '../map/Map.module.css';
@@ -30,8 +30,8 @@ export function Square({ x, y }: SquareProps): JSX.Element {
     <div
       onClick={eventClick}
       className={[squareStyles.square, square && mapStyles[square.type]].join(' ')}
-      // -4 For the border size
-      style={{ width: SquareConfig.Width - 2, height: SquareConfig.Height - 2 }}
+      // -2 For the border size. 4 sides : -4px.
+      style={{ width: getSquareWidth(board.pourcentageSize) - 2, height: getSquareHeight(board.pourcentageSize) - 2 }}
     >
       {null}
     </div>

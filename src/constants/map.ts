@@ -1,6 +1,8 @@
 export interface BoardConfig {
   col: number;
   row: number;
+  pourcentageSize: number;
+  maxSize: number;
 };
 
 export interface MapState {
